@@ -1,0 +1,5 @@
+python paint2image.py --paint_start_scale 4 --input_name moving-gif_00130.png --ref_dir Input/Paint/moving-gif_00130 --ref_name moving-gif_00130_0.png
+
+python sifid_score.py --path2real Comparison/real/jpg/00017.jpg --path2fake Comparison/singan/jpg/moving-gif_00130,moving-gif_00017 --images_suffix jpg
+
+python recon_score.py --path2real Comparison/real/moving-gif_00130 --path2fake Comparison/singan/jpg/moving-gif_00130,moving-gif_00130 --images_suffix jpg
